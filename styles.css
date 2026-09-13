@@ -1,0 +1,96 @@
+/* =====================================================
+   ESTILOS DEL LABORATORIO HTML5
+   Autor: Abdiel Abreu
+   ===================================================== */
+
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 35px;
+    padding: 20px;
+}
+
+/* Artículos */
+article {
+    padding: 15px;
+}
+
+/* Imágenes */
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    width: 500px;
+}
+
+/* Canvas */
+canvas {
+    border: 1px solid black;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 600px) {
+
+    nav li {
+        display: block;
+        margin: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+}
