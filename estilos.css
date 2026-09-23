@@ -1,294 +1,192 @@
-/* ==============================
+css
+/* ======================================
    ESTILOS GENERALES
-   ============================== */
-
-* {
-    box-sizing: border-box;
-}
+   ====================================== */
 
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f4f7;
-    color: #222222;
+    background-color: #f5f7fa;
+    color: #212529;
 }
 
 
-/* ==============================
-   ENCABEZADO
-   Selector ID
-   ============================== */
+/* ======================================
+   HERO
+   ====================================== */
 
-#encabezado {
-    background-color: #1f3c88;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 5px solid #162d66;
-}
+.hero {
+    min-height: 550px;
 
-#encabezado h1 {
-    margin: 0 0 10px 0;
-    font-size: 2.4rem;
-}
-
-.subtitulo {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-
-/* ==============================
-   MENÚ
-   Selector de clase
-   ============================== */
-
-.menu {
-    background-color: #162d66;
-    padding: 10px 20px;
-}
-
-.menu ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    justify-content: center;
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
 
-.menu a:hover {
-    text-decoration: underline;
-}
+    background-size: cover;
+    background-position: center;
 
-
-/* ==============================
-   CONTENIDO PRINCIPAL
-   ============================== */
-
-main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-}
-
-.contenido-principal {
-    flex: 2;
+    padding: 80px 20px;
 }
 
 
-/* ==============================
+/* ======================================
+   TÍTULOS
+   ====================================== */
+
+.section-title {
+    font-weight: 700;
+    color: #172554;
+}
+
+
+/* ======================================
+   ABOUT
+   ====================================== */
+
+.about-box {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #0d6efd;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box h3 {
+    color: #172554;
+}
+
+
+/* ======================================
    TARJETAS
-   MODELO DE CAJA
-   ============================== */
+   ====================================== */
 
-.tarjeta {
+.card {
+    border: none;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* ======================================
+   DETALLE DEL PROYECTO
+   ====================================== */
+
+.project-detail {
     background-color: white;
 
-    margin-bottom: 25px;
-    padding: 25px;
+    padding: 40px;
 
-    border: 1px solid #d1d5db;
-    border-radius: 10px;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
 }
 
-.tarjeta h2 {
-    margin-top: 0;
-    color: #1f3c88;
+.project-detail h1 {
+    color: #172554;
+
+    margin-bottom: 20px;
 }
 
-.lista-caracteristicas {
-    padding-left: 25px;
-}
-
-.lista-caracteristicas li {
-    margin-bottom: 8px;
+.project-detail h2 {
+    color: #0d6efd;
 }
 
 
-/* ==============================
-   SELECTORES
-   ============================== */
+/* ======================================
+   CONTACTO
+   ====================================== */
 
-.contenedor-selectores {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.selector {
-    flex: 1;
-    min-width: 180px;
-
-    padding: 20px;
-    border: 2px solid #1f3c88;
-    border-radius: 8px;
-
-    background-color: #eef3ff;
-}
-
-.selector h3 {
-    margin-top: 0;
-    color: #1f3c88;
-}
-
-
-/* ==============================
-   BARRA LATERAL
-   ============================== */
-
-.barra-lateral {
-    flex: 1;
-
+.contact-box {
     background-color: white;
 
-    padding: 25px;
-    border: 1px solid #d1d5db;
-    border-radius: 10px;
+    padding: 30px;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
 }
 
-.barra-lateral h2 {
-    color: #1f3c88;
-    margin-top: 0;
+.contact-box h2 {
+    color: #172554;
 }
 
 
-/* ==============================
-   MODELO DE CAJA
-   ============================== */
-
-.caja-ejemplo {
-    background-color: #dbe7ff;
-
-    padding: 25px;
-    margin: 20px 0;
-
-    border: 5px solid #1f3c88;
-
-    text-align: center;
-    font-weight: bold;
-}
-
-
-/* ==============================
-   DISEÑO RESPONSIVO
-   ============================== */
-
-.seccion-responsiva {
-    max-width: 1160px;
-    margin: 30px auto;
-    padding: 30px 20px;
-
-    background-color: white;
-
-    border-left: 6px solid #1f3c88;
-    border-radius: 8px;
-}
-
-.seccion-responsiva h2 {
-    color: #1f3c88;
-    margin-top: 0;
-}
-
-
-/* ==============================
+/* ======================================
    FOOTER
-   ============================== */
+   ====================================== */
 
-#contacto {
-    background-color: #162d66;
+.footer {
+    background-color: #212529;
+
     color: white;
-    text-align: center;
 
     padding: 25px;
-    margin-top: 40px;
-}
 
-#contacto p {
-    margin: 5px;
+    margin-top: 50px;
 }
 
 
-/* ==============================
-   TABLETAS
-   ============================== */
+/* ======================================
+   RESPONSIVIDAD
+   ====================================== */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-    #encabezado h1 {
+    .hero {
+        min-height: 450px;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-detail {
+        padding: 25px;
+    }
+
+    .contact-box {
+        padding: 25px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
         font-size: 1.8rem;
     }
 
-    .menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    main {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .contenido-principal,
-    .barra-lateral {
-        width: 100%;
-    }
-
-    .contenedor-selectores {
-        flex-direction: column;
-    }
-
-    .selector {
-        width: 100%;
-    }
-}
-
-
-/* ==============================
-   TELÉFONOS
-   ============================== */
-
-@media screen and (max-width: 480px) {
-
-    #encabezado {
-        padding: 25px 15px;
-    }
-
-    #encabezado h1 {
-        font-size: 1.5rem;
-    }
-
-    .subtitulo {
+    .hero p {
         font-size: 1rem;
     }
 
-    main {
-        padding: 0 10px;
+    .section-title {
+        font-size: 1.8rem;
     }
 
-    .tarjeta,
-    .barra-lateral {
-        padding: 18px;
-    }
-
-    .seccion-responsiva {
-        margin: 20px 10px;
-        padding: 20px 15px;
-    }
 }
