@@ -1,240 +1,223 @@
-```html
 <!DOCTYPE html>
-<html lang="es">
 
+<html lang="es">
 <head>
 
-    <meta charset="UTF-8">
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+<title>Abdiel Tech | Portafolio</title>
 
-    <title>Abdiel Tech | Portafolio</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="estilos.css">
+<!-- CSS personalizado -->
+<link rel="stylesheet" href="estilos.css">
+```
 
 </head>
 
 <body>
 
+```
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-    <!-- NAVBAR -->
+    <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand fw-bold" href="index.html">
+            Abdiel Tech
+        </a>
 
-        <div class="container">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Mostrar navegación">
 
-            <a class="navbar-brand fw-bold"
-               href="index.html">
-                Abdiel Tech
-            </a>
+            <span class="navbar-toggler-icon"></span>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal">
+        </button>
 
-                <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
 
-            </button>
+            <ul class="navbar-nav ms-auto">
 
-            <div class="collapse navbar-collapse"
-                 id="menuPrincipal">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
 
-                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="portafolio.html">
+                        Portafolio
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="index.html">
-                            Inicio
-                        </a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">
+                        Proyecto
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                           href="portafolio.html">
-                            Portafolio
-                        </a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="proyecto.html">
-                            Proyecto
-                        </a>
-                    </li>
+            </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
+        </div>
 
-                </ul>
+    </div>
+
+</nav>
+
+
+<!-- Contenido -->
+<main class="container py-5">
+
+    <h1 class="section-title text-center">
+        Mi Portafolio
+    </h1>
+
+    <p class="text-center mb-5">
+        Algunos ejemplos de proyectos relacionados con tecnología,
+        desarrollo web y seguridad de la información.
+    </p>
+
+
+    <div class="row g-4">
+
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-6 col-lg-4">
+
+            <div class="card h-100 shadow">
+
+                <div class="card-body">
+
+                    <span class="badge bg-primary mb-3">
+                        Desarrollo Web
+                    </span>
+
+                    <h2 class="card-title h4">
+                        Sitio Web Responsivo
+                    </h2>
+
+                    <p class="card-text">
+                        Proyecto desarrollado utilizando HTML5,
+                        CSS3 y Bootstrap para crear una página web
+                        adaptable a computadoras, tabletas y
+                        teléfonos móviles.
+                    </p>
+
+                    <a href="proyecto.html"
+                       class="btn btn-primary">
+                        Leer más
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
-    </nav>
 
+        <!-- Proyecto 2 -->
+        <div class="col-md-6 col-lg-4">
 
-    <!-- CONTENIDO -->
+            <div class="card h-100 shadow">
 
-    <main class="py-5">
+                <div class="card-body">
 
-        <div class="container">
+                    <span class="badge bg-success mb-3">
+                        Seguridad
+                    </span>
 
-            <div class="text-center mb-5">
+                    <h2 class="card-title h4">
+                        Auditoría de Seguridad
+                    </h2>
 
-                <h1 class="section-title">
-                    Mi Portafolio
-                </h1>
+                    <p class="card-text">
+                        Ejemplo de proyecto académico relacionado
+                        con la identificación de riesgos y controles
+                        de seguridad de la información.
+                    </p>
 
-                <p class="lead">
-                    Algunos proyectos ficticios relacionados
-                    con tecnología y seguridad.
-                </p>
-
-            </div>
-
-
-            <div class="row g-4">
-
-
-                <!-- PROYECTO 1 -->
-
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100 shadow">
-
-                        <div class="card-body">
-
-                            <span class="badge bg-primary mb-2">
-                                Desarrollo Web
-                            </span>
-
-                            <h2 class="h4 card-title">
-                                Sitio Web Responsivo
-                            </h2>
-
-                            <p class="card-text">
-                                Diseño de un sitio web adaptable
-                                para computadoras, tabletas
-                                y teléfonos.
-                            </p>
-
-                            <a href="proyecto.html"
-                               class="btn btn-primary">
-                                Leer más
-                            </a>
-
-                        </div>
-
-                    </div>
+                    <a href="proyecto.html"
+                       class="btn btn-primary">
+                        Leer más
+                    </a>
 
                 </div>
-
-
-                <!-- PROYECTO 2 -->
-
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100 shadow">
-
-                        <div class="card-body">
-
-                            <span class="badge bg-success mb-2">
-                                Seguridad
-                            </span>
-
-                            <h2 class="h4 card-title">
-                                Auditoría de Seguridad
-                            </h2>
-
-                            <p class="card-text">
-                                Proyecto ficticio enfocado
-                                en identificar riesgos de
-                                seguridad en una red.
-                            </p>
-
-                            <a href="proyecto.html"
-                               class="btn btn-primary">
-                                Leer más
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTO 3 -->
-
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100 shadow">
-
-                        <div class="card-body">
-
-                            <span class="badge bg-warning text-dark mb-2">
-                                Innovación
-                            </span>
-
-                            <h2 class="h4 card-title">
-                                Sistema Inteligente
-                            </h2>
-
-                            <p class="card-text">
-                                Concepto de una plataforma
-                                para administrar recursos
-                                tecnológicos.
-                            </p>
-
-                            <a href="proyecto.html"
-                               class="btn btn-primary">
-                                Leer más
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
 
             </div>
 
         </div>
 
-    </main>
 
+        <!-- Proyecto 3 -->
+        <div class="col-md-6 col-lg-4">
 
-    <footer class="footer">
+            <div class="card h-100 shadow">
 
-        <div class="container text-center">
+                <div class="card-body">
 
-            <p class="mb-0">
-                &copy; 2026 Abdiel Abreu | Abdiel Tech
-            </p>
+                    <span class="badge bg-warning text-dark mb-3">
+                        Tecnología
+                    </span>
+
+                    <h2 class="card-title h4">
+                        Sistema Inteligente
+                    </h2>
+
+                    <p class="card-text">
+                        Concepto de un sistema tecnológico orientado
+                        a mejorar procesos mediante herramientas
+                        digitales y automatización.
+                    </p>
+
+                    <a href="proyecto.html"
+                       class="btn btn-primary">
+                        Leer más
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </footer>
+
+    </div>
+
+</main>
 
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+<!-- Footer -->
+<footer class="footer text-center">
+
+    <p class="mb-0">
+        © 2026 Abdiel Tech | Abdiel Abreu
+    </p>
+
+    <p class="mb-0">
+        Proyecto académico de desarrollo web
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```
 
 </body>
-
 </html>
-```

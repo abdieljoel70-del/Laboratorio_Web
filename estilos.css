@@ -1,192 +1,161 @@
-css
-/* ======================================
-   ESTILOS GENERALES
-   ====================================== */
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
-    color: #212529;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f5f5f5;
+color: #222222;
 }
 
+h1 {
+font-weight: bold;
+}
 
-/* ======================================
-   HERO
-   ====================================== */
+h2 {
+font-weight: bold;
+}
+
+p {
+line-height: 1.5;
+}
+
+/* Selector ID */
+
+#encabezado {
+padding: 40px 20px;
+}
+
+/* Seccion principal */
 
 .hero {
-    min-height: 550px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-        ),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
-
-    background-size: cover;
-    background-position: center;
-
-    padding: 80px 20px;
+min-height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #1f2937;
+padding: 60px 20px;
 }
 
-
-/* ======================================
-   TÍTULOS
-   ====================================== */
+/* Selector de clase */
 
 .section-title {
-    font-weight: 700;
-    color: #172554;
+color: #1f3a5f;
+font-weight: bold;
+margin-bottom: 20px;
 }
 
-
-/* ======================================
-   ABOUT
-   ====================================== */
+/* Modelo de caja */
 
 .about-box {
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 15px;
-
-    border-left: 5px solid #0d6efd;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
+background-color: white;
+margin: 20px;
+padding: 30px;
+border: 2px solid #0d6efd;
+border-radius: 10px;
 }
 
-.about-box h3 {
-    color: #172554;
-}
-
-
-/* ======================================
-   TARJETAS
-   ====================================== */
+/* Tarjetas */
 
 .card {
-    border: none;
-
-    border-radius: 15px;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+border-radius: 10px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* Cajas de tecnologia */
 
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.15) !important;
+.technology-box {
+background-color: white;
+margin: 10px;
+padding: 20px;
+border: 1px solid #cccccc;
+border-radius: 10px;
 }
 
-
-/* ======================================
-   DETALLE DEL PROYECTO
-   ====================================== */
+/* Detalle del proyecto */
 
 .project-detail {
-    background-color: white;
-
-    padding: 40px;
-
-    border-radius: 15px;
+background-color: white;
+margin-bottom: 30px;
+padding: 30px;
+border: 1px solid #cccccc;
+border-radius: 10px;
 }
 
 .project-detail h1 {
-    color: #172554;
-
-    margin-bottom: 20px;
+color: #1f3a5f;
 }
 
 .project-detail h2 {
-    color: #0d6efd;
+color: #0d6efd;
+margin-top: 25px;
 }
 
-
-/* ======================================
-   CONTACTO
-   ====================================== */
+/* Formulario */
 
 .contact-box {
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 15px;
+background-color: white;
+padding: 30px;
+border: 1px solid #cccccc;
+border-radius: 10px;
 }
 
-.contact-box h2 {
-    color: #172554;
-}
-
-
-/* ======================================
-   FOOTER
-   ====================================== */
+/* Pie de pagina */
 
 .footer {
-    background-color: #212529;
+background-color: #222222;
+color: white;
+padding: 25px;
+margin-top: 40px;
+}
 
-    color: white;
+/* Diseño responsivo */
 
-    padding: 25px;
+@media screen and (max-width: 768px) {
 
-    margin-top: 50px;
+
+.hero {
+    min-height: 400px;
+    padding: 40px 15px;
+}
+
+.about-box {
+    margin: 10px;
+    padding: 20px;
+}
+
+.project-detail {
+    padding: 20px;
+}
+
+.contact-box {
+    padding: 20px;
 }
 
 
-/* ======================================
-   RESPONSIVIDAD
-   ====================================== */
-
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: 450px;
-
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .project-detail {
-        padding: 25px;
-    }
-
-    .contact-box {
-        padding: 25px;
-    }
-
 }
 
+/* Telefonos */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
     .hero {
-        min-height: 400px;
+        min-height: 350px;
     }
 
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 30px;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 28px;
     }
 
 }
