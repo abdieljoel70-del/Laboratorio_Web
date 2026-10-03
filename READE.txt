@@ -1,0 +1,34 @@
+LABORATORIO DE JAVASCRIPT
+Estudiante: Abdiel Abreu
+
+DESCRIPCIÓN DE LA TAREA
+
+Este laboratorio tiene como propósito practicar conceptos básicos de JavaScript mediante la creación de una página web utilizando HTML y un archivo JavaScript externo.
+
+En la tarea se trabajan diferentes conceptos fundamentales de JavaScript, incluyendo la declaración de variables, tipos de datos, arreglos, objetos, estructuras de control y funciones.
+
+También se practican las estructuras condicionales if, else if y else, además de los ciclos for, while y do...while. Se incluye la iteración de arreglos para mostrar información dinámicamente en la página web.
+
+Como parte del laboratorio, se estudia el alcance de las variables y el concepto de clausuras (closures) mediante ejemplos sencillos.
+
+El archivo HTML se encuentra enlazado con el archivo externo script.js utilizando la etiqueta <script>. Los resultados y mensajes de prueba pueden verificarse mediante la consola de desarrollador del navegador.
+
+HERRAMIENTAS UTILIZADAS
+
+- Visual Studio / Visual Studio Code
+- HTML5
+- JavaScript
+- Navegador web
+- GitHub
+
+ARCHIVOS PRINCIPALES
+
+- index.html: página principal del laboratorio.
+- script.js: contiene el código JavaScript y los ejercicios solicitados.
+- READE.txt: contiene una breve explicación de la tarea.
+
+OBJETIVO
+
+Demostrar el uso básico de JavaScript y comprender cómo utilizar variables, tipos de datos, arreglos, objetos, estructuras de control, funciones, alcance y clausuras dentro de una página web.
+
+Estudiante: Abdiel Abreu
