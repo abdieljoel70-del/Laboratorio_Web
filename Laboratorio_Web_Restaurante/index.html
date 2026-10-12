@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sazón Boricua: cocina puertorriqueña con un toque moderno. Explora nuestro menú y contáctanos.">
+  <title>Sazón Boricua | Restaurante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">SB</span> Sazón Boricua</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="paginas/menu.html">Menú</a></li>
+                <li><a class="dropdown-item" href="paginas/entradas.html">Entradas</a></li>
+                <li><a class="dropdown-item" href="paginas/platos-principales.html">Platos principales</a></li>
+                <li><a class="dropdown-item" href="paginas/postres.html">Postres</a></li>
+                <li><a class="dropdown-item" href="paginas/bebidas.html">Bebidas</a></li>
+                <li><a class="dropdown-item" href="paginas/historia.html">Nuestra historia</a></li>
+                <li><a class="dropdown-item" href="paginas/chef.html">Nuestro chef</a></li>
+                <li><a class="dropdown-item" href="paginas/eventos.html">Eventos</a></li>
+                <li><a class="dropdown-item" href="paginas/reservaciones.html">Reservaciones</a></li>
+                <li><a class="dropdown-item" href="paginas/contacto.html">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-accent btn-sm px-3" href="paginas/reservaciones.html">Reservar mesa</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero-carousel">
+      <div id="carouselRestaurante" class="carousel slide" data-bs-ride="carousel" aria-label="Galería destacada del restaurante">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselRestaurante" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#carouselRestaurante" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#carouselRestaurante" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-img" alt="Plato de comida fresca servido con presentación moderna">
+            <div class="carousel-caption text-start">
+              <p class="eyebrow">SABORES DE NUESTRA ISLA</p><h1>Tradición boricua,<br><span>toque contemporáneo.</span></h1>
+              <p class="d-none d-md-block">Ingredientes frescos, recetas con historia y una mesa preparada para compartir.</p>
+              <a class="btn btn-accent btn-lg" href="paginas/menu.html">Descubre el menú</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-img" alt="Comida recién preparada para compartir">
+            <div class="carousel-caption text-start">
+              <p class="eyebrow">HECHO CON CARIÑO</p><h2>Un sabor que<br><span>reúne a todos.</span></h2>
+              <p class="d-none d-md-block">Ven a celebrar los pequeños momentos con buena comida y hospitalidad.</p>
+              <a class="btn btn-accent btn-lg" href="paginas/reservaciones.html">Reserva tu mesa</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-img" alt="Ambiente acogedor de restaurante con mesas preparadas">
+            <div class="carousel-caption text-start">
+              <p class="eyebrow">TU NUEVO LUGAR FAVORITO</p><h2>Momentos especiales,<br><span>comienzan en la mesa.</span></h2>
+              <a class="btn btn-accent btn-lg" href="paginas/eventos.html">Celebra con nosotros</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurante" data-bs-slide="prev" aria-label="Diapositiva anterior"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurante" data-bs-slide="next" aria-label="Diapositiva siguiente"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8"><p class="eyebrow text-accent">DE NUESTRA COCINA A TU MESA</p><h2 class="section-title">Favoritos de la casa</h2><p class="text-muted-custom">Una muestra de los sabores que hacen especial cada visita.</p></div>
+          <div class="col-lg-4 text-lg-end"><a href="paginas/menu.html" class="text-link">Ver menú completo <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="food-card h-100" tabindex="0" data-dish="Mofongo de la casa" data-description="Plátano majado, ajo, aceite de oliva y tu selección de proteína." data-price="$18">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Plato de la casa con ingredientes frescos">
+              <div class="food-card-body"><div class="d-flex justify-content-between gap-2"><h3>Mofongo de la casa</h3><span class="price">$18</span></div><p>Plátano, ajo y sabor isleño en cada bocado.</p><button class="btn btn-outline-dark btn-sm details-button" type="button">Ver detalles</button></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="food-card h-100" tabindex="0" data-dish="Pollo a la parrilla" data-description="Pollo marinado con hierbas, servido con arroz y vegetales de temporada." data-price="$16">
+              <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80" alt="Pollo a la parrilla servido con acompañantes">
+              <div class="food-card-body"><div class="d-flex justify-content-between gap-2"><h3>Pollo a la parrilla</h3><span class="price">$16</span></div><p>Marinado en hierbas y cocinado al momento.</p><button class="btn btn-outline-dark btn-sm details-button" type="button">Ver detalles</button></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="food-card h-100" tabindex="0" data-dish="Flan de la abuela" data-description="Flan cremoso con caramelo preparado al estilo tradicional." data-price="$7">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Postre dulce servido en plato" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80'">
+              <div class="food-card-body"><div class="d-flex justify-content-between gap-2"><h3>Flan de la abuela</h3><span class="price">$7</span></div><p>Un final dulce, suave y lleno de recuerdos.</p><button class="btn btn-outline-dark btn-sm details-button" type="button">Ver detalles</button></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-band section-space">
+      <div class="container"><div class="row align-items-center g-5">
+        <div class="col-lg-6"><img class="story-img" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85" alt="Interior acogedor de un restaurante"></div>
+        <div class="col-lg-6"><p class="eyebrow text-accent">MÁS QUE UNA COMIDA</p><h2 class="section-title">Una mesa con sabor a hogar.</h2><p>En Sazón Boricua celebramos los ingredientes de nuestra tierra y la alegría de sentarnos juntos. Combinamos recetas familiares, productos frescos y un servicio cercano para crear una experiencia memorable.</p><a class="btn btn-dark mt-2" href="paginas/historia.html">Conoce nuestra historia</a></div>
+      </div></div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4"><div class="feature-box"><span class="feature-icon">✦</span><h3>Ingredientes frescos</h3><p>Elegimos ingredientes de calidad para resaltar cada receta.</p></div></div>
+          <div class="col-md-4"><div class="feature-box"><span class="feature-icon">♡</span><h3>Hospitalidad real</h3><p>Queremos que cada visita se sienta como volver a casa.</p></div></div>
+          <div class="col-md-4"><div class="feature-box"><span class="feature-icon">⌂</span><h3>Para compartir</h3><p>Espacio ideal para reuniones, celebraciones y buenos recuerdos.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section-space">
+      <div class="container"><div class="row align-items-center g-4"><div class="col-lg-7"><p class="eyebrow">MANTENTE AL DÍA</p><h2 class="section-title">Novedades con buen sabor.</h2><p>Déjanos tu correo para recibir noticias y eventos especiales.</p></div><div class="col-lg-5">
+        <form id="newsletterForm" class="row g-2 needs-validation" novalidate>
+          <div class="col-sm-8"><label for="newsletterEmail" class="visually-hidden">Correo electrónico</label><input class="form-control form-control-lg" type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required><div class="invalid-feedback">Escribe un correo electrónico válido.</div></div>
+          <div class="col-sm-4 d-grid"><button class="btn btn-accent btn-lg" type="submit">Suscribirme</button></div>
+          <div class="col-12"><p id="newsletterMessage" class="form-message mb-0" aria-live="polite"></p></div>
+        </form>
+      </div></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="row g-4">
+      <div class="col-lg-5"><a class="navbar-brand fw-bold text-white" href="index.html"><span class="brand-mark">SB</span> Sazón Boricua</a><p class="mt-3">Tradición, sabor y hospitalidad en cada plato.</p></div>
+      <div class="col-6 col-lg-3"><h2 class="footer-heading">Explora</h2><ul class="footer-links"><li><a href="paginas/menu.html">Menú</a></li><li><a href="paginas/historia.html">Nuestra historia</a></li><li><a href="paginas/eventos.html">Eventos</a></li></ul></div>
+      <div class="col-6 col-lg-4"><h2 class="footer-heading">Visítanos</h2><p>Dirección demostrativa: Yabucoa, Puerto Rico<br>Horario: martes a domingo, 11:00 a. m.–9:00 p. m.<br><a href="paginas/contacto.html">Contáctanos</a></p></div>
+    </div><div class="footer-bottom"><span>© <span id="currentYear"></span> Sazón Boricua. Proyecto académico.</span><span>Diseñado con HTML, CSS, Bootstrap y JavaScript.</span></div></div>
+  </footer>
+
+  <div class="modal fade" id="dishModal" tabindex="-1" aria-labelledby="dishModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="dishModalTitle">Detalle del plato</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div><div class="modal-body"><p id="dishModalDescription"></p><strong id="dishModalPrice"></strong></div><div class="modal-footer"><button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button><a href="paginas/reservaciones.html" class="btn btn-accent">Reservar mesa</a></div></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
